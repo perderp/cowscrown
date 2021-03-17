@@ -2,6 +2,7 @@
 // reset
 @import-normalize.css;
 @import '_variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
 
 * {
     // remove all padding and margin
@@ -13,7 +14,7 @@
     font-weight:500;
     -webkit-tap-highlight-color: transparent;
     -webkit-overflow-scrolling: touch;
-    font-family:"Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    font-family:'Noto Sans JP', sans-serif;
     
 }
 
