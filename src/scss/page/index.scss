@@ -9,3 +9,87 @@
     SECTION
 ====================================
 ***/
+
+main{overflow: hidden;}
+
+.concept{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    .con_stage{
+        position: relative;
+        width: 100%;
+        background-image: url('../../../src/image/concept/con_bg.png');
+        background-size: cover;        
+
+        .con_container{
+            width: 600px;
+            margin: 0 auto;
+
+            .con_content{
+                h2{}
+                h4{}
+                p{
+                    position: relative;
+                    z-index: 3;
+                }
+            }
+        }
+
+        .con_burger{
+            position: absolute;
+            top: -13%;
+            right: -20%;
+            width: 56.571vw;
+            height: auto;
+            z-index: 2;
+
+            img{
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+                user-drag: none; 
+                user-select: none;
+                -moz-user-select: none;
+                -webkit-user-drag: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+            }
+        }
+
+        .con_pat_left, .con_pat_right{
+            position: absolute;            
+            width: 11.071vw;
+            height: auto;
+            z-index: 2;
+
+            img{
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+                user-drag: none; 
+                user-select: none;
+                -moz-user-select: none;
+                -webkit-user-drag: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+            }
+        }
+
+        .con_pat_left{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(-0%, -50%);
+
+        }
+
+        .con_pat_right{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(-0%, -50%);
+        }
+    }
+}
