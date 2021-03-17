@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import "../core/mixins";
+@import "../core/variables";
+
+
+
+/***
+====================================
+    SECTION
+====================================
+***/
+.github{
+    position: relative;
+    transform-style: preserve-3d;
+    &__inner{
+        position: relative;
+    }
+    &__bg{
+        position: absolute;
+        z-index: -99;
+        img{
+            height: 100vh;
+            width: 100vw;
+        }
+    }
+    &__objects{
+        height: 100vh;
+        width: 100vw;
+        perspective: 100px;
+        .human{
+            
+            &__01{
+                position:absolute;
+                bottom:400px;
+                left:860px;
+                z-index:1;
+            }
+            &__02{
+                position:absolute;
+                z-index:-1;
+                bottom: 377px;
+                left: 873px;
+            }
+        }
+        .space{
+            z-index:-1;
+            &__01{
+                position:absolute;
+                bottom:450px;
+                left:1000px;
+                z-index:-1;
+            }
+            &__02{
+                position:absolute;
+                z-index:-2;
+                bottom: 426px;
+                left: 1000px;
+            }
+
+        }
+        .house{
+            &__01{
+                position:absolute;
+                bottom: 537px;
+                left: 887px;
+                z-index:-2;
+            }
+            &__02{
+                position:absolute;
+                z-index:-2;
+                bottom: 600px;
+                left: 1200px;
+            }
+        }
+    }
+}
+.blog{
+    height: 20000px;
+    background:black;
+    &__right{
+        position:sticky;
+        top:20px;
+        margin:20px;
+        background:white;
+    }
+}
+.ab{
+    position: absolute;
+}
