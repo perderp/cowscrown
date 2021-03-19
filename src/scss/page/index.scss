@@ -422,4 +422,35 @@ main{overflow: hidden;}
         }
         // End view_sp
     }
+=======
+/***
+====================================
+  HERO  SECTION
+====================================
+***/
+.hero{
+    background:url(../../../public/img/common/bg_hero.png);
+    background-position:center;
+    background-size:contain;
+    min-height: 100vh;
+    width: 100vw;
+    position:relative;
+    &__inner{}
+    &__top{
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    &__bottom{}
+    &__logo{}
+}
+
+/***
+====================================
+  SHOP  SECTION
+====================================
+***/
+
+.shop{
+    width: 100vw;
 }
