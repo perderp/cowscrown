@@ -537,6 +537,10 @@ main {
             }
             .burger{
                 background-image: url(../../../public/img/common/takeout_img.png);
+                background-position: center;
+                background-size:contain ;
+                height: 578px;
+                background-repeat: no-repeat;
             }
         }
     }
