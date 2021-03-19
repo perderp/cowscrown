@@ -1,0 +1,39 @@
+.p-footer{
+    background-color:#C8161D;
+    &__ul{
+        padding:89.7px 0 66.9px 0;
+        align-items: center;
+        justify-content: center;
+    }
+    &__li{
+        border-left:1px solid #FFFF;
+        height:6.2vh;
+        display: flex;
+        align-items: center;
+        a{
+            padding:0px 42px;
+            
+        }
+    }
+    &__li:first-child{
+        border-left:none;
+    }
+    &__li:last-child{
+        img{
+            height:50px;
+        }
+    }
+
+    .icon{
+        padding-left:17px;
+    }
+}
+.copyright{
+    text-align: center;
+    padding-bottom:61.5px;
+    
+    p,a{
+        color:#FFFF;
+        font-weight: 400;
+    }
+}
