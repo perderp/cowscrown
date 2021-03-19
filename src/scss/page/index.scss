@@ -10,6 +10,198 @@
 ====================================
 ***/
 
+table {
+    margin: auto;
+}
+
+/*表示切替*/
+html body .view_pc {
+    display: block !important;
+}
+
+html body table.view_pc {
+    display: table !important;
+}
+
+html body table.view_pc tr {
+    display: table !important;
+}
+
+html body table.view_pc th {
+    display: table !important;
+}
+
+html body table.view_pc td {
+    display: table !important;
+}
+
+html body .view_pctab {
+    display: block !important;
+}
+
+html body table.view_pctab {
+    display: table !important;
+}
+
+html body table.view_pctab tr {
+    display: table !important;
+}
+
+html body table.view_pctab th {
+    display: table !important;
+}
+
+html body table.view_pctab td {
+    display: table !important;
+}
+
+html body .view_tab {
+    display: none !important;
+}
+
+html body .view_sp {
+    display: none !important;
+}
+
+html body .view_tabsp {
+    display: none !important;
+}
+
+@media only screen and (max-width: 1050px) {
+    html body .view_pc {
+        display: none !important;
+    }
+
+    html body .view_pctab {
+        display: block !important;
+    }
+
+    html body table.view_pctab {
+        display: table !important;
+    }
+
+    html body table.view_pctab tr {
+        display: table !important;
+    }
+
+    html body table.view_pctab th {
+        display: table !important;
+    }
+
+    html body table.view_pctab td {
+        display: table !important;
+    }
+
+    html body .view_tab {
+        display: block !important;
+    }
+
+    html body table.view_tab {
+        display: table !important;
+    }
+
+    html body table.view_tab tr {
+        display: table !important;
+    }
+
+    html body table.view_tab th {
+        display: table !important;
+    }
+
+    html body table.view_tab td {
+        display: table !important;
+    }
+
+    html body .view_sp {
+        display: none !important;
+    }
+
+    html body .view_tabsp {
+        display: block !important;
+    }
+
+    html body table.view_tabsp {
+        display: table !important;
+    }
+
+    html body table.view_tabsp tr {
+        display: table !important;
+    }
+
+    html body table.view_tabsp th {
+        display: table !important;
+    }
+
+    html body table.view_tabsp td {
+        display: table !important;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    html body .view_pc {
+        display: none !important;
+    }
+
+    html body .view_pctab {
+        display: none !important;
+    }
+
+    html body .view_tab {
+        display: none !important;
+    }
+
+    html body .view_sp {
+        display: block !important;
+    }
+
+    html body table.view_sp {
+        display: table !important;
+    }
+
+    html body table.view_sp tr {
+        display: table !important;
+    }
+
+    html body table.view_sp th {
+        display: table !important;
+    }
+
+    html body table.view_sp td {
+        display: table !important;
+    }
+
+    html body .view_tabsp {
+        display: block !important;
+    }
+
+    html body table.view_tabsp {
+        display: table !important;
+    }
+
+    html body table.view_tabsp tr {
+        display: table !important;
+    }
+
+    html body table.view_tabsp th {
+        display: table !important;
+    }
+
+    html body table.view_tabsp td {
+        display: table !important;
+    }
+}
+
+.mg_auto { margin: 0 auto; }
+
+.undrag {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 main{overflow: hidden;}
 
 .noto{
@@ -40,6 +232,10 @@ main{overflow: hidden;}
     &_right{ text-align: right; }
 }
 
+
+// ================================================
+//                    CONCEPT
+// ================================================
 .concept{
     position: relative;
     z-index: 1;
@@ -195,6 +391,9 @@ main{overflow: hidden;}
     }
 }
 
+// ================================================
+//                    QUALITY
+// ================================================
 .quality{
     position: relative;
     z-index: 1;
@@ -312,19 +511,19 @@ main{overflow: hidden;}
         // end q_container
 
         .view_pc{
-            display: block;
-            @media only screen and (max-width: 768px){
-                display: none;
-            }      
+            // display: block;
+            // @media only screen and (max-width: 768px){
+            //     display: none;
+            // }      
         }
         // end view_pc
 
         .view_sp{
-            display: none;
+            // display: none;
 
-            @media only screen and (max-width: 769px){
-                display: block;
-            }      
+            // @media only screen and (max-width: 769px){
+            //     display: block;
+            // }      
 
             .q_content{
                 display: flex;
@@ -337,15 +536,14 @@ main{overflow: hidden;}
                 width: 100%;
 
                 .width_100{
-                    width: 100%;
-                    margin: 0 auto;
+                    // margin: 0 auto;
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
                     align-items: center;
 
                     .width_57{
-                        width: 57%;
+                        // width: 57%;
 
                         .q_title_1{
                             width: 165px;
@@ -373,7 +571,7 @@ main{overflow: hidden;}
                     }
 
                     .width_43{
-                        width: 43%;
+                        // width: 43%;
                         height: 100%;
 
                         .q_badge{
@@ -422,35 +620,4 @@ main{overflow: hidden;}
         }
         // End view_sp
     }
-=======
-/***
-====================================
-  HERO  SECTION
-====================================
-***/
-.hero{
-    background:url(../../../public/img/common/bg_hero.png);
-    background-position:center;
-    background-size:contain;
-    min-height: 100vh;
-    width: 100vw;
-    position:relative;
-    &__inner{}
-    &__top{
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-    }
-    &__bottom{}
-    &__logo{}
-}
-
-/***
-====================================
-  SHOP  SECTION
-====================================
-***/
-
-.shop{
-    width: 100vw;
 }
