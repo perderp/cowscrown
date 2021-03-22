@@ -40,6 +40,12 @@ main{overflow: hidden;}
     }
 }
 
+.oswald_r{ 
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400; 
+}
+
 .txt{
     &_center{ text-align: center; }
 
@@ -126,9 +132,133 @@ main{overflow: hidden;}
 }
 
 // ================================================
+//                    MENU
+// ================================================
+header{
+    z-index: 999;    
+
+    .nav_m_wrap{
+        position: absolute;
+        width: 100%;
+        top: 0;
+
+        .nav_container{
+            margin-top: 35px;
+            .nav_pc{
+                @media only screen and (max-width: 1201px){
+                    display: none;
+                }
+                .width_15{
+                    .nav{
+                        .nav_item{
+                            border-bottom: 1px #ffffff solid;
+
+                            &:last-child{
+                                border-bottom: none;
+                            }
+
+                            a{
+                                margin-left: 20px;
+                                display: block;
+                                padding: 15px 0;
+                                letter-spacing: 2px;
+
+                                img.icon{
+                                    width: 1.429vw;
+                                    height: auto;                                   
+                                    margin-left: 10px;
+                                }
+                            }
+
+                            .nav_fb{
+                                img.icon{                                
+                                    margin-left: 15px;
+                                }
+                            }
+
+                            .nav_logo{
+                                .width_77{
+                                    img{
+                                        margin-top: 7px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    // End nav
+                }
+            }
+            // End nav_pc
+
+            .nav_tab{
+                display: none;
+
+                @media only screen and (max-width: 1201px){
+                    display: block;
+                }
+                @media only screen and (max-width: 771px){
+                    display: none;
+                }   
+                .nav{     
+                    @media only screen and (max-width: 1201px){
+                        width: 85vw !important;
+                    }  
+
+                    .nav_item{
+
+                        a{
+                            display: block;
+                            letter-spacing: 2px;
+
+                            img{                                
+                                width: 7.292vw;
+                                height: auto;
+                            }
+                        }
+
+                        .nav_logo{
+                            img{
+                                width: 13.542vw;
+                            }
+                        }
+                    }
+                }
+                // End nav
+            }
+            // End mav_tab            
+
+            .view_sp{
+                .nav{                    
+
+                    .nav_item{
+
+                        a{
+                            display: block;
+                            letter-spacing: 2px;
+
+                            img{                                
+                                width: 7.292vw;
+                                height: auto;
+                            }
+                        }
+
+                        .nav_logo{
+                            img{
+                                width: 13.542vw;
+                            }
+                        }
+                    }
+                }
+                // End nav
+            }
+            // view_sp
+        }
+    }
+}
+
+// ================================================
 //                    FOOTER
 // ================================================
-
 footer{
     background: #C8161D;
     padding: 100px 0 65px;
@@ -140,13 +270,15 @@ footer{
     .view_pc{
         .width_100{
             .foot_nav_list{
-                width: 68.571vw;
+                width: 1000px;
                 margin-bottom: 4.643vw;
                 
-                .width_16{
+                .ft_col{
                     border-right: 1px solid #ffffff;
-                    padding: 0 2.857vw;
+                    // padding: 0 2.857vw;
                     display: inline-block;
+                    text-align: center;
+                    padding-right: 28px;
 
                     &:last-child{
                         border-right: 1px solid none;
@@ -157,30 +289,99 @@ footer{
                         padding: 1.429vw 0;
 
                         .flex{
-                            .width_82{ 
+                            .width_100{ 
                                 p{
-                                    padding-right: 18px;
                                     display: inline-block;
+                                    letter-spacing: 2px;
+
+                                    img.icon{
+                                        width: 1.429vw;
+                                        height: auto;
+                                        
+                                        margin-left: 10px;
+                                    }
                                 }
                             }
 
                             .width_18{
-                                img{
+                                img.icon{
                                     width: 1.429vw;
-                                    height: 1.429vw;
+                                    height: auto;
                                 }
                             }
                         }                        
 
                         img{
                             width: 3.571vw;
-                            height: 2.143vw;
+                            height: auto;
                         }
+
+                        p{ letter-spacing: 2px; }
                     }
                 }
                 // End li
 
-                .ft_sc{ padding: 0 2.2vw; }
+                // .ft_sc{ padding: 0 1vw; }
+            }
+            // End ul
+        }
+    }
+
+    .view_tab{
+        .width_100{
+            .foot_nav_list{
+                width: 90vw;
+                margin-bottom: 4.643vw;
+                
+                .ft_col{
+                    border-right: 1px solid #ffffff;
+                    // padding: 0 2.857vw;
+                    display: inline-block;
+                    text-align: center;
+                    padding-right: 28px;
+
+                    &:last-child{
+                        border-right: 1px solid none;
+                    }
+
+                    a{
+                        display: block;
+                        padding: 1.429vw 0;
+
+                        .flex{
+                            .width_100{ 
+                                p{
+                                    display: inline-block;
+                                    letter-spacing: 2px;
+
+                                    img.icon{
+                                        width: 1.429vw;
+                                        height: auto;
+                                        
+                                        margin-left: 10px;
+                                    }
+                                }
+                            }
+
+                            .width_18{
+                                img.icon{
+                                    width: 1.429vw;
+                                    height: auto;
+                                }
+                            }
+                        }                        
+
+                        img{
+                            width: 3.571vw;
+                            height: auto;
+                        }
+
+                        p{ letter-spacing: 2px; }
+                    }
+                }
+                // End li
+
+                // .ft_sc{ padding: 0 1vw; }
             }
             // End ul
         }
