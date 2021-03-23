@@ -57,6 +57,12 @@ main{overflow: hidden;}
 .font{
     &_12{ font-size: 12px; }
 
+    &_13{ font-size: 13px; }
+
+    &_14{ font-size: 14px; }
+
+    &_15{ font-size: 15px; }
+
     &_16{ font-size: 16px; }
 
     &_18{ font-size: 18px; }
@@ -148,7 +154,7 @@ header{
                 @media only screen and (max-width: 1201px){
                     display: none;
                 }
-                .width_15{
+                .width_20{
                     .nav{
                         .nav_item{
                             border-bottom: 1px #ffffff solid;
@@ -201,24 +207,24 @@ header{
                 }   
                 .nav{     
                     @media only screen and (max-width: 1201px){
-                        width: 85vw !important;
+                        width: 70vw !important;
                     }  
 
                     .nav_item{
 
                         a{
                             display: block;
-                            letter-spacing: 2px;
+                            // letter-spacing: 2px;
 
-                            img{                                
-                                width: 7.292vw;
+                            img.icon{                                
+                                width: 4.292vw;
                                 height: auto;
                             }
                         }
 
                         .nav_logo{
                             img{
-                                width: 13.542vw;
+                                width: 10.542vw;
                             }
                         }
                     }
@@ -228,15 +234,19 @@ header{
             // End mav_tab            
 
             .view_sp{
-                .nav{                    
+                .nav{         
+                    position: fixed;    
+                    top: 0;
+                    left: 0;   
+                    padding: 12px 0;   
 
                     .nav_item{
 
                         a{
                             display: block;
-                            letter-spacing: 2px;
+                            // letter-spacing: 2px;
 
-                            img{                                
+                            img.icon{                                
                                 width: 7.292vw;
                                 height: auto;
                             }
@@ -250,6 +260,8 @@ header{
                     }
                 }
                 // End nav
+                
+                // End nav_fix
             }
             // view_sp
         }
@@ -272,51 +284,24 @@ footer{
             .foot_nav_list{
                 width: 1000px;
                 margin-bottom: 4.643vw;
+                justify-content: center;
                 
                 .ft_col{
                     border-right: 1px solid #ffffff;
-                    // padding: 0 2.857vw;
-                    display: inline-block;
-                    text-align: center;
-                    padding-right: 28px;
-
+                    height: 6.2vh;
                     &:last-child{
                         border-right: 1px solid none;
                     }
-
                     a{
                         display: block;
-                        padding: 1.429vw 0;
-
-                        .flex{
-                            .width_100{ 
-                                p{
-                                    display: inline-block;
-                                    letter-spacing: 2px;
-
-                                    img.icon{
-                                        width: 1.429vw;
-                                        height: auto;
-                                        
-                                        margin-left: 10px;
-                                    }
-                                }
-                            }
-
-                            .width_18{
-                                img.icon{
-                                    width: 1.429vw;
-                                    height: auto;
-                                }
-                            }
-                        }                        
-
-                        img{
-                            width: 3.571vw;
+                        padding: 0 2.2vw;
+                        img.icon{
+                            width: 1.429vw;
                             height: auto;
-                        }
+                            margin-left: 16px;
+                        }                       
 
-                        p{ letter-spacing: 2px; }
+                        // p{ letter-spacing: 2px; }
                     }
                 }
                 // End li
@@ -332,56 +317,26 @@ footer{
             .foot_nav_list{
                 width: 90vw;
                 margin-bottom: 4.643vw;
-                
+                justify-content: center;                
                 .ft_col{
                     border-right: 1px solid #ffffff;
                     // padding: 0 2.857vw;
-                    display: inline-block;
-                    text-align: center;
-                    padding-right: 28px;
-
                     &:last-child{
                         border-right: 1px solid none;
                     }
-
                     a{
                         display: block;
-                        padding: 1.429vw 0;
+                        padding: 0 2.2vw;                 
 
-                        .flex{
-                            .width_100{ 
-                                p{
-                                    display: inline-block;
-                                    letter-spacing: 2px;
-
-                                    img.icon{
-                                        width: 1.429vw;
-                                        height: auto;
-                                        
-                                        margin-left: 10px;
-                                    }
-                                }
-                            }
-
-                            .width_18{
-                                img.icon{
-                                    width: 1.429vw;
-                                    height: auto;
-                                }
-                            }
-                        }                        
-
-                        img{
-                            width: 3.571vw;
+                        img.icon{
+                            width: 2vw;
                             height: auto;
+                            margin-left: 16px;
                         }
-
-                        p{ letter-spacing: 2px; }
+                        // p{ letter-spacing: 2px; }
                     }
                 }
                 // End li
-
-                // .ft_sc{ padding: 0 1vw; }
             }
             // End ul
         }
@@ -390,9 +345,9 @@ footer{
     .view_sp{
         .width_100{
             .foot_nav_list{
-                width: 52.083vw;
+                width: 63.083vw;
                 
-                .width_33{
+                .ft_item{
                     border-right: 1px solid none;
 
                     a{
@@ -415,16 +370,14 @@ footer{
 
             .foot_social_list{
                 width: 52.083vw;
-                padding: 0 8.5vw 0 1.167vw;
                 margin-top: 3.125vw;
                 margin-bottom: 11.458vw;
 
-                .width_28{
+                .ft_item_2{
                     border-right: 1px solid none;
 
                     a{
-                        display: block;
-                      
+                        display: block;                      
 
                         .ft_social{
                             width: 7.292vw;

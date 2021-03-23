@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="public/css/common.css" />
     <!-- page css-->
     <link rel="stylesheet" href="public/css/page/index.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -29,26 +31,38 @@
         <div class="nav_m_wrap">
             <div class="nav_container mg_auto l-wrap">
                 <div class="nav_pc width_100 flex">
-                    <div class="width_15">
+                    <div class="width_20">
                         <div class="nav width_100">
                             <div class="nav_item">
-                                <a href="#" class="txt_white line_height font_18 barlow_m">CONCEPT</a>
+                                <a href="#" class="flex flex_center">
+                                    <img src="public/img/navigation/nav_concept.svg" alt="CONCEPT">
+                                </a>
                             </div>
 
                             <div class="nav_item"> 
-                                <a href="#" class="txt_white line_height font_18 barlow_m">MENU</a>
+                                <a href="#" class="flex flex_center">
+                                    <img src="public/img/navigation/nav_menu.svg" alt="MENU">
+                                </a>                                
                             </div>
                             
                             <div class="nav_item">
-                                <a href="#" class="txt_white line_height font_18 barlow_m">ACCESS</a>
+                                <a href="#" class="flex flex_center">
+                                    <img src="public/img/navigation/nav_access.svg" alt="ACCESS">
+                                </a>
                             </div>
 
                             <div class="nav_item">
-                                <a href="#" class="txt_white line_height font_18 barlow_m nav_insta">Instagram <img src="public/img/common/foot_insta.svg" alt="" class="icon"></a>
+                                <a href="#" class="nav_insta flex flex_center">
+                                    <img src="public/img/navigation/nav_insta.svg" alt="Instagram">
+                                    <img src="public/img/common/foot_insta.svg" alt="" class="icon">
+                                </a>
                             </div>
 
                             <div class="nav_item">
-                                <a href="#" class="txt_white line_height font_18 barlow_m nav_fb">Facebook <img src="public/img/common/foot_fb.svg" alt="" class="icon"></a>
+                                <a href="#" class="nav_fb flex flex_center">
+                                    <img src="public/img/navigation/nav_fb.svg" alt="Facebook">
+                                    <img src="public/img/common/foot_fb.svg" alt="" class="icon">
+                                </a>
                             </div>
 
                             <div class="nav_item">
@@ -61,34 +75,44 @@
                             <!-- End nav_item -->
                         </div>
                     </div>
-                    <div class="view_pc width_85"></div>
+                    <div class="view_pc width_80"></div>
                 </div>
                 <!-- end nav_pc -->
 
                 <div class="nav_tab width_100">
                     <div class="nav width_100 mg_auto flex flex_center">
-                        <div class="nav_item">
-                            <a href="#" class="txt_white line_height font_18 barlow_m">CONCEPT</a>
+                        <div class="nav_item flex flex_center">
+                            <a href="#" class="flex flex_center">
+                                <img src="public/img/navigation/nav_concept.svg" alt="CONCEPT">
+                            </a>
                         </div>
 
-                        <div class="nav_item"> 
-                            <a href="#" class="txt_white line_height font_18 barlow_m">MENU</a>
+                        <div class="nav_item flex flex_center"> 
+                            <a href="#" class="flex flex_center">
+                                <img src="public/img/navigation/nav_menu.svg" alt="MENU">
+                            </a>
                         </div>
                         
-                        <div class="nav_item">
-                            <a href="#" class="txt_white line_height font_18 barlow_m">ACCESS</a>
+                        <div class="nav_item flex flex_center">
+                            <a href="#" class="flex flex_center">
+                                <img src="public/img/navigation/nav_access.svg" alt="ACCESS">
+                            </a>
                         </div>
 
-                        <div class="nav_item">
-                            <a href="#" class="nav_insta"><img src="public/img/common/foot_insta.svg" alt="" class="icon"></a>
+                        <div class="nav_item flex flex_center">
+                            <a href="#" class="nav_insta flex flex_center">
+                                <img src="public/img/common/foot_insta.svg" alt="" class="icon">
+                            </a>
                         </div>
 
-                        <div class="nav_item">
-                            <a href="#" class="nav_fb"><img src="public/img/common/foot_fb.svg" alt="" class="icon"></a>
+                        <div class="nav_item flex flex_center">
+                            <a href="#" class="nav_fb flex flex_center">
+                                <img src="public/img/common/foot_fb.svg" alt="" class="icon">
+                            </a>
                         </div>
 
-                        <div class="nav_item">
-                            <a href="#" class="txt_white nav_logo">
+                        <div class="nav_item flex flex_center">
+                            <a href="#" class="txt_white nav_logo flex flex_center">
                                 <img src="public/img/common/nav_logo.svg" alt="">
                             </a>
                         </div>
@@ -98,34 +122,47 @@
                 </div>
                 <!-- End nav_tab -->
 
-                <div class="view_sp width_100">
-                    <div class="nav width_100 mg_auto flex flex_center">
-                        <div class="nav_item">
-                            <a href="#" class="txt_white line_height font_18 barlow_m">CONCEPT</a>
+                <div class="view_sp width_100 relative">
+                    <div class="nav width_100 navbar">
+                        <div class="width_85 mg_auto flex flex_center nav_fix" id="nav">
+                            <div class="nav_item flex flex_center">
+                                <a href="#" class="flex flex_center">
+                                    <img src="public/img/navigation/nav_concept.svg" alt="CONCEPT">
+                                </a>
+                            </div>
+    
+                            <div class="nav_item flex flex_center"> 
+                                <a href="#" class="flex flex_center">
+                                    <img src="public/img/navigation/nav_menu.svg" alt="MENU">
+                                </a>
+                            </div>
+                            
+                            <div class="nav_item flex flex_center">
+                                <a href="#" class="flex flex_center">
+                                    <img src="public/img/navigation/nav_access.svg" alt="ACCESS">
+                                </a>
+                            </div>
+    
+                            <div class="nav_item flex flex_center">
+                                <a href="#" class="nav_insta flex flex_center">
+                                    <img src="public/img/common/foot_insta.svg" alt="" class="icon">
+                                </a>
+                            </div>
+    
+                            <div class="nav_item flex flex_center">
+                                <a href="#" class="nav_fb flex flex_center">
+                                    <img src="public/img/common/foot_fb.svg" alt="" class="icon">
+                                </a>
+                            </div>
+    
+                            <div class="nav_item flex flex_center">
+                                <a href="#" class="txt_white nav_logo flex flex_center">
+                                    <img src="public/img/common/nav_logo.svg" alt="">
+                                </a>
+                            </div>
+                            <!-- End nav_item -->
                         </div>
-
-                        <div class="nav_item"> 
-                            <a href="#" class="txt_white line_height font_18 barlow_m">MENU</a>
-                        </div>
-                        
-                        <div class="nav_item">
-                            <a href="#" class="txt_white line_height font_18 barlow_m">ACCESS</a>
-                        </div>
-
-                        <div class="nav_item">
-                            <a href="#" class="nav_insta"><img src="public/img/common/foot_insta.svg" alt="" class="icon"></a>
-                        </div>
-
-                        <div class="nav_item">
-                            <a href="#" class="nav_fb"><img src="public/img/common/foot_fb.svg" alt="" class="icon"></a>
-                        </div>
-
-                        <div class="nav_item">
-                            <a href="#" class="txt_white nav_logo">
-                                <img src="public/img/common/nav_logo.svg" alt="">
-                            </a>
-                        </div>
-                        <!-- End nav_item -->
+                        <!-- End nav -->
                     </div>
                     <div class="view_pc width_85"></div>
                 </div>
@@ -135,22 +172,24 @@
     </header>
 
     <main>
+        <!-- HERO SECTION -->
         <section class="hero">                
             <div class="l-wrap">
-                <div class=" hero__inner">
+                <div class=" hero__inner relative">
                     <div class="hero__top u-d-f">
                         <div class="hero__logo ">
                             <img src="public/img/common/hero_logo.png" alt="Cows Crown">
                         </div>
                     </div>
-                    <div class="hero__bottom">
-                        <div class="scroll">
-                            <a href="" class="txt_white line_height font_16 oswald_r">
-                                scroll
-                                <div class="line"></div>
-                            </a>
-                        </div>
-                    </div>
+
+                    <a href="" class="txt_white line_height font_14 oswald_r scroll">
+                        scroll
+                    </a>
+                    <!-- <div class="hero__bottom relative width_100">
+                        <a href="" class="txt_white line_height font_16 oswald_r scroll">
+                            scroll
+                        </a>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -264,14 +303,14 @@
         <section class="menu">
             <div class="m_stage">                
                 <div class="m_container l-wrap">
-                    <div class="m_content mg_auto">      
+                    <div class="m_content mg_auto relative">      
                         <img class="txt_center" src="public/img/menu/m_title.png" alt="Menu">   
-                        <div class="_line"></div>                        
+                                           
                         
                         <p class="noto_r txt_white font_18 txt_center">食材にこだわったカウズクラウンのハンバーガー！<br/>
                             メニューの一部をご紹介します。</p>
                         
-                        <a href="#">
+                        <a href="#" class="menu_btn">
                             <div class="m_btn relative mg_auto flex flex_center">
                                 <div class="width_2"></div>
                                 <div class="width_10">
@@ -284,6 +323,7 @@
                                 <div class="width_13"></div>
                             </div>                                
                         </a>
+                        <div class="_line"></div>     
 
                     </div>
                 </div>
@@ -428,48 +468,42 @@
     <footer>
         <div class="view_pc">
             <div class="width_100 relative">
-                <div class="foot_nav_list pd_0 list_type_none flex flex_center mg_auto">
-                    <div class="ft_col width_12">
-                        <a href="#">
-                            <p class="barlow_m txt_center font_18 txt_white line_height">CONCEPT</p>
+                <div class="foot_nav_list pd_0 list_type_none flex flex_center mg_auto ">
+                    <div class="ft_col flex flex_center">
+                        <a href="#" class="flex flex_center">
+                            <img src="public/img/navigation/nav_concept.svg" alt="CONCEPT">
                         </a>
                     </div>
 
-                    <div class="ft_col width_12">
-                        <a href="#">
-                            <p class="barlow_m txt_center font_18 txt_white line_height">MENU</p>
+                    <div class="ft_col flex flex_center">
+                        <a href="#" class="flex flex_center">
+                            <img src="public/img/navigation/nav_menu.svg" alt="MENU">
                         </a>
                     </div>
 
-                    <div class="ft_col width_12"> 
-                        <a href="#">
-                            <p class="barlow_m txt_center font_18 txt_white line_height">ACCESS</p>
+                    <div class="ft_col flex flex_center"> 
+                        <a href="#" class="flex flex_center">
+                            <img src="public/img/navigation/nav_access.svg" alt="ACCESS">
                         </a>
                     </div>
 
-                    <div class="ft_col width_18 ft_sc">
-                        <a href="#">
-                            <div class="flex flex_center">
-                                <div class="width_100">
-                                    <p class="noto_m font_18 txt_white line_height">Instagram <img src="public/img/common/foot_insta.svg" alt="" class="icon"></p>
-                                </div>
-                            </div>                            
+                    <div class="ft_col flex flex_center">
+                        <a href="#" class="nav_insta flex flex_center">
+                            <img src="public/img/navigation/nav_insta.svg" alt="Instagram" class="txt_insta">
+                            <img src="public/img/common/foot_insta.svg" alt="" class="icon">
                         </a>
                     </div>
 
-                    <div class="ft_col width_18 ft_sc">
-                        <a href="#">
-                            <div class="flex flex_center">
-                                <div class="width_100">
-                                    <p class="noto_m font_18 txt_white line_height">Facebook <img src="public/img/common/foot_fb.svg" alt="" class="icon"></p>
-                                </div>
-                            </div>
+                    <div class="ft_col flex flex_center">
+                        <a href="#" class="nav_insta flex flex_center">
+                            <img src="public/img/navigation/nav_fb.svg" alt="Instagram" class="txt_insta">
+                            <img src="public/img/common/foot_fb.svg" alt="" class="icon">
                         </a>
                     </div>
 
-                    <div class="ft_col width_12">
-                        <a href="#">
-                            <img src="public/img/common/foot_logo.svg" alt="">
+                    <div class="ft_col flex flex_center">
+                        <a href="#" class="flex flex_center">
+                            <img src="public/img/common/foot_logo.png" alt="" class="txt_logo">
                         </a>
                     </div>
 
@@ -483,48 +517,42 @@
 
         <div class="view_tab">
             <div class="width_100 relative">
-                <div class="foot_nav_list pd_0 list_type_none flex flex_center mg_auto">
-                    <div class="ft_col width_12">
-                        <a href="#">
-                            <p class="barlow_m txt_center font_18 txt_white line_height">CONCEPT</p>
+                <div class="foot_nav_list pd_0 list_type_none flex flex_center mg_auto ">
+                    <div class="ft_col flex flex_center">
+                        <a href="#" class="flex flex_center">
+                            <img src="public/img/navigation/nav_concept.svg" alt="CONCEPT">
                         </a>
                     </div>
 
-                    <div class="ft_col width_12">
-                        <a href="#">
-                            <p class="barlow_m txt_center font_18 txt_white line_height">MENU</p>
+                    <div class="ft_col flex flex_center">
+                        <a href="#" class="flex flex_center">
+                            <img src="public/img/navigation/nav_menu.svg" alt="MENU">
                         </a>
                     </div>
 
-                    <div class="ft_col width_12"> 
-                        <a href="#">
-                            <p class="barlow_m txt_center font_18 txt_white line_height">ACCESS</p>
+                    <div class="ft_col flex flex_center"> 
+                        <a href="#" class="flex flex_center">
+                            <img src="public/img/navigation/nav_access.svg" alt="ACCESS">
                         </a>
                     </div>
 
-                    <div class="ft_col width_18 ft_sc">
-                        <a href="#">
-                            <div class="flex flex_center">
-                                <div class="width_100">
-                                    <p class="noto_m font_18 txt_white line_height">Instagram <img src="public/img/common/foot_insta.svg" alt="" class="icon"></p>
-                                </div>
-                            </div>                            
+                    <div class="ft_col flex flex_center">
+                        <a href="#" class="nav_insta flex flex_center">
+                            <img src="public/img/navigation/nav_insta.svg" alt="Instagram" class="txt_insta">
+                            <img src="public/img/common/foot_insta.svg" alt="" class="icon">
                         </a>
                     </div>
 
-                    <div class="ft_col width_18 ft_sc">
-                        <a href="#">
-                            <div class="flex flex_center">
-                                <div class="width_100">
-                                    <p class="noto_m font_18 txt_white line_height">Facebook <img src="public/img/common/foot_fb.svg" alt="" class="icon"></p>
-                                </div>
-                            </div>
+                    <div class="ft_col flex flex_center">
+                        <a href="#" class="nav_insta flex flex_center">
+                            <img src="public/img/navigation/nav_fb.svg" alt="Instagram" class="txt_insta">
+                            <img src="public/img/common/foot_fb.svg" alt="" class="icon">
                         </a>
                     </div>
 
-                    <div class="ft_col width_12">
-                        <a href="#">
-                            <img src="public/img/common/foot_logo.svg" alt="">
+                    <div class="ft_col flex flex_center">
+                        <a href="#" class="flex flex_center">
+                            <img src="public/img/common/foot_logo.png" alt="" class="txt_logo">
                         </a>
                     </div>
 
@@ -539,21 +567,21 @@
         <div class="view_sp">
             <div class="width_100 relative">
                 <div class="foot_nav_list pd_0 list_type_none mg_auto flex flex_center">
-                    <div class="width_33 mg_auto">
-                        <a href="#">
-                            <p class="barlow_m txt_center font_18 txt_white">CONCEPT</p>
+                    <div class="ft_item flex flex_center">
+                        <a href="#" class="flex flex_center">
+                            <img src="public/img/navigation/nav_concept.svg" alt="CONCEPT">
                         </a>
                     </div>
 
-                    <div class="width_33 mg_auto">
-                        <a href="#">
-                            <p class="barlow_m txt_center font_18 txt_white">MENU</p>
+                    <div class="ft_item flex flex_center">
+                        <a href="#" class="flex flex_center">
+                            <img src="public/img/navigation/nav_menu.svg" alt="MENU">
                         </a>
                     </div>
 
-                    <div class="width_33 mg_auto"> 
-                        <a href="#">
-                            <p class="barlow_m txt_center font_18 txt_white">ACCESS</p>
+                    <div class="ft_item flex flex_center"> 
+                        <a href="#" class="flex flex_center">
+                            <img src="public/img/navigation/nav_access.svg" alt="ACCESS">
                         </a>
                     </div>
 
@@ -562,20 +590,20 @@
 
                 <div class="foot_social_list pd_0 list_type_none mg_auto flex flex_center">
 
-                    <div class="width_28 mg_auto">
-                        <a href="#" class="txt_right">
+                    <div class="ft_item_2 flex flex_center">
+                        <a href="#" class="flex flex_center">
                             <img src="public/img/common/foot_insta.svg" alt="" class="ft_social">                  
                         </a>
                     </div>
 
-                    <div class="width_28 mg_auto">
-                        <a href="#" class="txt_center">
+                    <div class="ft_item_2 flex flex_center">
+                        <a href="#" class="flex flex_center">
                             <img src="public/img/common/foot_fb.svg" alt="" class="ft_social">
                         </a>
                     </div>
 
-                    <div class="width_33 mg_auto">
-                        <a href="#" class="txt_left">
+                    <div class="ft_item_2 flex flex_center">
+                        <a href="#" class="flex flex_center">
                             <img src="public/img/common/foot_logo.svg" alt="" class="ft_logo">
                         </a>
                     </div>
@@ -592,7 +620,6 @@
 
     <!-- MAIN JS-->
     <script type="text/javascript" src="public/js/all.js"></script>
-    
 
     <!-- Goggle API Key -->
     <!-- <script>
