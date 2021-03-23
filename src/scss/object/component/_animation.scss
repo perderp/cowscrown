@@ -1,27 +1,59 @@
-.fadeIn{
-    animation : fadeIn 1.5s linear both;
+.tk_burger_parent{
+    position: relative;
 }
 
-.blur{
-    animation: blur .09s linear forwards;
+.fade-left-in{
+    animation : fade-left-in .5s linear both;
+}
+.fade-left-out{
+    animation : fade-left-out .5s linear both;
 }
 
-@keyframes fadeIn{
+.fade-right-in{
+    animation : fade-right-in .5s linear both;
+}
+.fade-right-out{
+    animation : fade-right-out .5s linear both;
+}
+
+
+
+
+@keyframes fade-left-in{
     0%{
-        transform:translateY(20%);
-        opacity:0;
+        transform:translateX(100%);
     }
     100%{
-        transform:translateY(0%);
-        opacity:1;
+        transform:translateX(0%);
     }
 }
 
-@keyframes blur{
+@keyframes fade-left-out{
     0%{
-        filter:blur(0);
+        transform:translateX(0%);
     }
     100%{
-        filter:blur(4px);
+        transform:translateX(100%);
     }
 }
+
+@keyframes fade-right-in{
+    0%{
+        transform:translateX(-100%);
+    }
+    100%{
+        transform:translateX(0%);
+    }
+}
+
+@keyframes fade-right-out{
+    0%{
+        transform:translateX(0%);
+    }
+    100%{
+        transform:translateX(-100%);
+    }
+}
+
+
+
