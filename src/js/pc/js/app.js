@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             con_burger.classList.remove('fade-left-in');
         }
         // PAGE AND MENU
-        if(pageY >= menu && pageY <= (access) ){
+        if(pageY >= menu && pageY <= (access + 500) ){
             if(window.innerWidth >= 770){
                 tk_burger.classList.add('fade-right-in');
                 tk_burger.classList.remove('fade-right-out');
@@ -64,9 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 tk_burger.classList.remove('fade-right-out');
                 tk_burger.classList.remove('fade-right-in');
             }
-
-
-
         }
 
         if(pageY >= (takeout - (menu/5)) && pageY <= (access + (access *.5))){
