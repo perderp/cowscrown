@@ -1,59 +1,93 @@
-.tk_burger_parent{
+.tk_burger_parent {
     position: relative;
 }
 
-.fade-left-in{
-    animation : fade-left-in .5s linear both;
-}
-.fade-left-out{
-    animation : fade-left-out .5s linear both;
+.fade-left-in {
+    animation: fade-left-in .5s linear both;
 }
 
-.fade-right-in{
-    animation : fade-right-in .5s linear both;
-}
-.fade-right-out{
-    animation : fade-right-out .5s linear both;
+.fade-left-out {
+    animation: fade-left-out .5s linear both;
 }
 
-
-
-
-@keyframes fade-left-in{
-    0%{
-        transform:translateX(100%);
-    }
-    100%{
-        transform:translateX(0%);
-    }
+.fade-right-in {
+    animation: fade-right-in .5s linear both;
 }
 
-@keyframes fade-left-out{
-    0%{
-        transform:translateX(0%);
-    }
-    100%{
-        transform:translateX(100%);
-    }
+.fade-right-out {
+    animation: fade-right-out .5s linear both;
 }
 
-@keyframes fade-right-in{
-    0%{
-        transform:translateX(-100%);
-    }
-    100%{
-        transform:translateX(0%);
-    }
+.fade-right-in02 {
+    animation: fade-right-in02 .5s linear both;
 }
 
-@keyframes fade-right-out{
-    0%{
-        transform:translateX(0%);
-    }
-    100%{
-        transform:translateX(-100%);
-    }
+.fade-right-out02 {
+    animation: fade-right-out02 .5s linear both;
 }
 
 
 
+
+
+@keyframes fade-left-in {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fade-left-out {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes fade-right-in {
+    0% {
+
+        left: -29.571vw;
+    }
+
+    100% {
+        left: 29.571vw;
+    }
+}
+
+@keyframes fade-right-out {
+    0% {
+        left: 29.571vw;
+    }
+
+    100% {
+        left: -29.571vw;
+    }
+}
+
+@keyframes fade-right-in02 {
+    0% {
+
+        left: -56%;
+    }
+
+    100% {
+        left: 56%;
+    }
+}
+
+@keyframes fade-right-out02 {
+    0% {
+        left:56%;
+    }
+
+    100% {
+        left: -56%;
+    }
+}

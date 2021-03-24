@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const concept = document.querySelector('.concept').offsetTop;
     const menu = document.querySelector('.menu').offsetTop;
     const access = document.querySelector('.access').offsetTop;
+    const takeout = document.querySelector('.takeout').offsetTop;
     // ADDING CLASS TO THIS QUERY
     const con_burger = document.querySelector('.con_burger');
     const tk_burger = document.querySelector('.tk_burger');
@@ -44,12 +45,46 @@ document.addEventListener('DOMContentLoaded', () => {
             con_burger.classList.add('fade-left-out');
             con_burger.classList.remove('fade-left-in');
         }
+        // PAGE AND MENU
         if(pageY >= menu && pageY <= (access) ){
-            tk_burger.classList.add('fade-right-in');
-            tk_burger.classList.remove('fade-right-out');
+            if(window.innerWidth >= 770){
+                tk_burger.classList.add('fade-right-in');
+                tk_burger.classList.remove('fade-right-out');
+            }else{
+                tk_burger.classList.remove('fade-right-out');
+                tk_burger.classList.remove('fade-right-in');
+            }
+
+
         }else{
-            tk_burger.classList.add('fade-right-out');
-            tk_burger.classList.remove('fade-right-in');
+            if(window.innerWidth >= 770){
+                tk_burger.classList.add('fade-right-out');
+                tk_burger.classList.remove('fade-right-in');
+            }else{
+                tk_burger.classList.remove('fade-right-out');
+                tk_burger.classList.remove('fade-right-in');
+            }
+
+
+
+        }
+
+        if(pageY >= (takeout - (menu/5)) && pageY <= (access + (access *.5))){
+            if(window.innerWidth <=769){
+                tk_burger.classList.add('fade-right-in02');
+                tk_burger.classList.remove('fade-right-out02');
+            }else{
+                tk_burger.classList.remove('fade-right-out02');
+                tk_burger.classList.remove('fade-right-in02');
+            }
+        }else{
+            if(window.innerWidth <=769){
+                tk_burger.classList.add('fade-right-out02');
+                tk_burger.classList.remove('fade-right-in02');
+            }else{
+                tk_burger.classList.remove('fade-right-out02');
+                tk_burger.classList.remove('fade-right-in02');
+            }
         }
     }
 });
