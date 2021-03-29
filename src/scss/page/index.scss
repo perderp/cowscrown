@@ -605,7 +605,69 @@
         // End view_sp
     }
 }
-
+// QUALITY ANIMATIONS
+.buns_pc{
+    position: relative;
+    z-index: 99;
+    animation-delay:0s,.6s;
+}   
+.patty_pc{
+    position: relative;
+    z-index: 99;
+    animation-delay:.7s,1.2s;
+}
+.andmore_pc{
+    position: relative;
+    z-index: 99;
+    animation-delay:1.2s,1.7s;
+}
+.omnibeef_pc{
+    position: relative;
+    z-index: 99;
+    animation-delay:1.7s,2.2s;
+}
+//TABLET
+.buns_tab{
+    position: relative;
+    z-index: 99;
+    animation-delay:0s,.6s;
+}   
+.patty_tab{
+    position: relative;
+    z-index: 99;
+    animation-delay:.7s,1.2s;
+}
+.andmore_tab{
+    position: relative;
+    z-index: 99;
+    animation-delay:1.2s,1.7s;
+}
+.omnibeef_tab{
+    position: relative;
+    z-index: 99;
+    animation-delay:1.7s,2.2s;
+}
+//SP
+.patty_sp{
+    position: relative;
+    z-index: 99;
+    animation-delay:0s,.6s;
+}   
+.omnibeef_sp{
+    position: relative;
+    z-index: 99;
+    animation-delay:.7s,1.2s;
+}
+.buns_sp{
+    position: relative;
+    z-index: 99;
+    animation-delay:1.2s,1.7s;
+}
+.andmore_sp{
+    position: relative;
+    z-index: 99;
+    animation-delay:1.7s,2.2s;
+}
 // ================================================
 //                    CONCEPT
 // ================================================
