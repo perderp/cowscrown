@@ -591,6 +591,11 @@
 
                     p{
                         @media only screen and (max-width: 476px){
+                            letter-spacing: -0.2vw;
+                            font-size: 14px;
+                        }
+                        @media only screen and (max-width: 320px){
+                            letter-spacing: -1.7px;
                             font-size: 14px;
                         }
                     }
@@ -783,6 +788,8 @@
                     }
 
                     @media only screen and (max-width: 476px){
+                        text-align:left;
+                        letter-spacing: -1.5px;
                         font-size: 17px;
                     }
                 }
@@ -963,6 +970,8 @@
                         }
 
                         p{
+                            text-align: left;
+                            letter-spacing:-1px;
                             padding-bottom: 6.510vw;
 
                             @media only screen and (max-width: 481px){
@@ -970,7 +979,7 @@
                             }
 
                             @media only screen and (max-width: 476px){
-                                letter-spacing: 0;
+                                letter-spacing:-1px;
                                 font-size: 17px;
                             }
                         }
