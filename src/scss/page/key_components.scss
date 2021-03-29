@@ -154,7 +154,7 @@ header{
                 @media only screen and (max-width: 1201px){
                     display: none;
                 }
-                .width_20{
+                .width_15{
                     .nav{
                         .nav_item{
                             border-bottom: 1px #ffffff solid;
@@ -183,9 +183,10 @@ header{
                             }
 
                             .nav_logo{
-                                .width_77{
+                                margin: 0 auto;
+                                .width_73{
                                     img{
-                                        margin-top: 7px;
+                                        width: 100%;
                                     }
                                 }
                             }
@@ -300,7 +301,7 @@ footer{
     }
 
     @media only screen and (max-width: 481px){
-        padding: 12vw 0 10vw;
+        padding: 10vw 0 10vw;
     }
 
     .view_pc{
