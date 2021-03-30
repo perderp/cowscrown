@@ -38,10 +38,12 @@ $(document).ready(function(){
       const omnibeef_sp = document.querySelector('.omnibeef_sp');
       const patty_sp = document.querySelector('.patty_sp');
   
-      if(window.pageYOffset === hero){
-          con_burger.classList.add('fade-left-in');
-          con_burger.classList.remove('fade-left-out');
-      }
+    //   if(window.pageYOffset === hero){
+    //       con_burger.classList.add('fade-left-in');
+    //       con_burger.classList.remove('fade-left-out');
+    //   }
+
+    
       window.onscroll= () =>{
           const pageY = window.pageYOffset; 
           if(pageY >= (hero + 25) && pageY <= (concept-1) ){
