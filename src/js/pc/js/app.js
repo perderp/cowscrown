@@ -44,7 +44,7 @@ $(document).ready(function(){
       }
       window.onscroll= () =>{
           const pageY = window.pageYOffset; 
-          if(pageY >= hero && pageY <= (concept-1) ){
+          if(pageY >= (hero + 25) && pageY <= (concept-1) ){
               con_burger.classList.add('fade-left-in');
               con_burger.classList.remove('fade-left-out');
           }else{
