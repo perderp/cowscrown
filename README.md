@@ -102,8 +102,8 @@ Additional information about cowscrown.
 
 | Member                                        | Role     |
 | --------------------------------------------- | -------- |
-| [Jaspher ](https://github.com/perderp)        | Core Dev |
-| [Dave ](https://github.com/DaveCanucot)        | Dev |
+| [Russel ](https://github.com/bpoc-russeljeff)        | Core Dev |
+| [Jaspher ](https://github.com/perderp)        | Dev |
 
 
 ## <a name='Contribute'></a> :handshake:Contribute
