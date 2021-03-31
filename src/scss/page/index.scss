@@ -20,6 +20,20 @@
       justify-content: center;
       min-height: 100vh;
 
+      .hero__logo{
+        img{
+            @media only screen and (max-width: 481px){
+                width: 83%;                
+                margin-bottom: 9vw;
+            }
+
+            @media only screen and (max-width: 376px){
+                width: 82%;
+                margin-bottom: 9vw;
+            }
+        }
+      }
+
       h1{
           margin: 0;
       }
@@ -509,11 +523,11 @@
                             display: block;     
                             z-index: 3;
                             position: absolute;
-                            right: 13px;
+                            right: -9px;
                             top: 0;
 
                             @media only screen and (max-width: 769px){
-                                top: -50px;
+                                top: 0px;
                             }
                         }
                     }
@@ -570,13 +584,19 @@
                     }
 
                     .width_43{
-                        .q_badge{
-                            @media only screen and (max-width: 476px){ 
-                                position: relative;
-                                height: 77vw;
-                                width: auto;    
-                                top: 0;    
-                                left: 0;
+                        .omnibeef_sp{
+                            height: 100%;
+
+                            .q_badge{
+                                height: auto;
+
+                                @media only screen and (max-width: 476px){ 
+                                    position: relative;
+                                    height: 77vw;
+                                    width: auto;    
+                                    top: 0;    
+                                    left: 0;
+                                }
                             }
                         }
                     }
