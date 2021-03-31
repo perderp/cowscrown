@@ -37,12 +37,15 @@ $(document).ready(function(){
       const andmore_sp = document.querySelector('.andmore_sp');
       const omnibeef_sp = document.querySelector('.omnibeef_sp');
       const patty_sp = document.querySelector('.patty_sp');
-      console.log(quality);
+
+      if (window.pageYOffset === document.body.offsetTop) {
+        con_burger.style.visibility = 'hidden';
+      }
 
       window.onscroll= () =>{
-          const pageY = window.pageYOffset; 
-          console.log(pageY);
-          if(pageY >= (hero + 25) && pageY <= (concept-1) ){
+          const pageY = window.pageYOffset;
+          con_burger.style.visibility = 'visible';
+          if(pageY >= (hero+1) && pageY <= (concept-1) ){
               con_burger.classList.add('fade-left-in');
               con_burger.classList.remove('fade-left-out');
           }else{
