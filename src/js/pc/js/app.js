@@ -71,21 +71,35 @@ $(document).ready(function(){
           }
   
           if(pageY >= (quality -150)){
+              //PC 
+              buns_pc.style.visibility = "visible";
+              andmore_pc.style.visibility = "visible";
+              patty_pc.style.visibility = "visible";
+              //TABLET
+              buns_tab.style.visibility = "visible";
+              andmore_tab.style.visibility = "visible";
+              patty_tab.style.visibility = "visible";
+              //SP
+              buns_sp.style.visibility = "visible";
+              andmore_sp.style.visibility = "visible";
+              patty_sp.style.visibility = "visible";
+
+
               if(window.innerWidth >= 770){
                   buns_pc.classList.add('zoome');
                   andmore_pc.classList.add('zoome');
-                  omnibeef_pc.classList.add('zoome');
+                  omnibeef_pc.classList.add('shake');
                   patty_pc.classList.add('zoome');
   
                   buns_tab.classList.add('zoome');
                   andmore_tab.classList.add('zoome');
-                  omnibeef_tab.classList.add('zoome');
+                  omnibeef_tab.classList.add('shake');
                   patty_tab.classList.add('zoome');
               }
               if(window.innerWidth <= 769){
                   buns_sp.classList.add('zoome');
                   andmore_sp.classList.add('zoome');
-                  omnibeef_sp.classList.add('zoome');
+                  omnibeef_sp.classList.add('shake');
                   patty_sp.classList.add('zoome');
               }
           }
