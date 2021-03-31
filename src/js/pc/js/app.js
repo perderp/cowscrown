@@ -37,9 +37,11 @@ $(document).ready(function(){
       const andmore_sp = document.querySelector('.andmore_sp');
       const omnibeef_sp = document.querySelector('.omnibeef_sp');
       const patty_sp = document.querySelector('.patty_sp');
+      console.log(quality);
 
       window.onscroll= () =>{
           const pageY = window.pageYOffset; 
+          console.log(pageY);
           if(pageY >= (hero + 25) && pageY <= (concept-1) ){
               con_burger.classList.add('fade-left-in');
               con_burger.classList.remove('fade-left-out');
@@ -68,7 +70,7 @@ $(document).ready(function(){
               }
           }
   
-          if(pageY >= quality){
+          if(pageY >= (quality -150)){
               if(window.innerWidth >= 770){
                   buns_pc.classList.add('zoome');
                   andmore_pc.classList.add('zoome');
