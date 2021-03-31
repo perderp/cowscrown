@@ -37,13 +37,7 @@ $(document).ready(function(){
       const andmore_sp = document.querySelector('.andmore_sp');
       const omnibeef_sp = document.querySelector('.omnibeef_sp');
       const patty_sp = document.querySelector('.patty_sp');
-  
-    //   if(window.pageYOffset === hero){
-    //       con_burger.classList.add('fade-left-in');
-    //       con_burger.classList.remove('fade-left-out');
-    //   }
 
-    
       window.onscroll= () =>{
           const pageY = window.pageYOffset; 
           if(pageY >= (hero + 25) && pageY <= (concept-1) ){
@@ -54,7 +48,7 @@ $(document).ready(function(){
               con_burger.classList.remove('fade-left-in');
           }
           // PAGE AND MENU
-          if(pageY >= menu && pageY <= (access + 500) ){
+          if(pageY >= (menu - 20) && pageY <= (access + 500) ){
               if(window.innerWidth >= 770){
                   tk_burger.classList.add('fade-right-in');
                   tk_burger.classList.remove('fade-right-out');
