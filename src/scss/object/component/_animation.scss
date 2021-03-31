@@ -17,12 +17,10 @@
 
 
 .shake {
-	animation: shake 0.8s both;
+	animation: shake .3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 .zoome{
-    animation : zoome, shake;
-    animation-duration: .5s , 0.5s;
-    animation-timing-function:cubic-bezier(0.45, 0, 0.55, 1);
+    animation : zoome .3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 
@@ -34,31 +32,34 @@
     transform-origin: 50% 50%;
   }
   15% {
-    transform: translateX(-30px) rotate(-6deg);
+    transform: rotate(-6deg);
   }
   30% {
-    transform: translateX(15px) rotate(6deg);
+    transform:  rotate(6deg);
   }
   45% {
-    transform: translateX(-15px) rotate(-3.6deg);
+    transform:  rotate(-3.6deg);
   }
   60% {
-    transform: translateX(9px) rotate(2.4deg);
+    transform:  rotate(2.4deg);
   }
   75% {
-    transform: translateX(-6px) rotate(-1.2deg);
+    transform:  rotate(-1.2deg);
   }
 }
 
 @keyframes zoome{
     0%{
         transform:scale(0);
+        opacity:0;
     }
     50%{
         transform:scale(1.5);
+        opacity:.5;
     }
     100%{
         transform:scale(1);
+        opacity:1;
     }
 }
 

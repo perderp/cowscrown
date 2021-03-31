@@ -95,7 +95,7 @@
             width: 1px;
             height: 100vh;
             background: #fff;
-            animation: sdl01 2s cubic-bezier(1, 0, 0, 1) infinite;
+            animation: sdl01 2.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
         }
     }
 }
@@ -615,68 +615,58 @@
     }
 }
 // QUALITY ANIMATIONS
-.buns_pc{
-    position: relative;
-    z-index: 99;
-    animation-delay:0s,.6s;
-}   
-.patty_pc{
-    position: relative;
-    z-index: 99;
-    animation-delay:.7s,1.2s;
+.buns{
+    &_pc,&_tab,&_sp{
+        position: relative;
+        z-index: 9;
+        visibility: hidden;
+    }
+    &_pc,&_tab{
+        animation-delay:0s;
+    }
+    &_sp{
+        animation-delay:.7s;
+    }
 }
-.andmore_pc{
-    position: relative;
-    z-index: 99;
-    animation-delay:1.2s,1.7s;
+.patty{
+    &_pc,&_tab,&_sp{
+        position: relative;
+        z-index: 9;
+        visibility: hidden;
+    }
+    &_pc,&_tab{
+        animation-delay:.3s;
+    }
+    &_sp{
+        animation-delay:0s;
+    }
 }
-.omnibeef_pc{
-    position: relative;
-    z-index: 99;
-    animation-delay:1.7s,2.2s;
+.andmore{
+    &_pc,&_tab,&_sp{
+        position: relative;
+        z-index: 9;
+        visibility: hidden;
+    }
+    &_pc,&_tab{
+        animation-delay:.7s;
+    }
+    &_sp{
+        animation-delay:1s;
+    }
 }
-//TABLET
-.buns_tab{
-    position: relative;
-    z-index: 99;
-    animation-delay:0s,.6s;
-}   
-.patty_tab{
-    position: relative;
-    z-index: 99;
-    animation-delay:.7s,1.2s;
+.omnibeef{
+    &_pc,&_tab,&_sp{
+        position: relative;
+        z-index: 9;
+    }
+    &_pc,&_tab{
+        animation-delay:1s;
+    }
+    &_sp{
+        animation-delay:.3s;
+    }
 }
-.andmore_tab{
-    position: relative;
-    z-index: 99;
-    animation-delay:1.2s,1.7s;
-}
-.omnibeef_tab{
-    position: relative;
-    z-index: 99;
-    animation-delay:1.7s,2.2s;
-}
-//SP
-.patty_sp{
-    position: relative;
-    z-index: 99;
-    animation-delay:0s,.6s;
-}   
-.omnibeef_sp{
-    position: relative;
-    z-index: 99;
-    animation-delay:.7s,1.2s;
-}
-.buns_sp{
-    position: relative;
-    z-index: 99;
-    animation-delay:1.2s,1.7s;
-}
-.andmore_sp{
-    position: relative;
-    z-index: 99;
-    animation-delay:1.7s,2.2s;
-}
+
 // ================================================
 //                    MENU
 // ================================================
