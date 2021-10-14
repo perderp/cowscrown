@@ -1,27 +1,115 @@
-.fadeIn{
-    animation : fadeIn 1.5s linear both;
+.fade-left-in {
+    animation: fade-left-in .3s cubic-bezier(0.5, 1, 0.89, 1) both;
 }
 
-.blur{
-    animation: blur .09s linear forwards;
+.fade-left-out {
+    animation: fade-left-out .3s cubic-bezier(0.11, 0, 0.5, 0) both;
 }
 
-@keyframes fadeIn{
+.fade-right-in {
+    animation: fade-right-in .3s cubic-bezier(0.5, 1, 0.89, 1) both;
+}
+
+.fade-right-out {
+    animation: fade-right-out .3s cubic-bezier(0.11, 0, 0.5, 0) both;
+}
+
+
+
+.shake {
+	animation: shake .3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+.zoome{
+    animation : zoome .3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+
+
+@keyframes shake{
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: rotate(-6deg);
+  }
+  30% {
+    transform:  rotate(6deg);
+  }
+  45% {
+    transform:  rotate(-3.6deg);
+  }
+  60% {
+    transform:  rotate(2.4deg);
+  }
+  75% {
+    transform:  rotate(-1.2deg);
+  }
+}
+
+@keyframes zoome{
     0%{
-        transform:translateY(20%);
+        transform:scale(0);
         opacity:0;
     }
+    50%{
+        transform:scale(1.5);
+        opacity:.5;
+    }
     100%{
-        transform:translateY(0%);
+        transform:scale(1);
         opacity:1;
     }
 }
 
-@keyframes blur{
-    0%{
-        filter:blur(0);
+
+
+@keyframes fade-left-in {
+    0% {
+        transform: translateX(10%);
+        opacity:0;
     }
-    100%{
-        filter:blur(4px);
+
+    100% {
+        transform: translateX(0%);
+        opacity:1;
+    }
+}
+
+@keyframes fade-left-out {
+    0% {
+        transform: translateX(0%);
+        opacity:1;
+    }
+
+    100% {
+        transform: translateX(10%);
+        opacity:0;
+    }
+}
+
+@keyframes fade-right-in {
+    0% {
+
+        left: 20.571vw;
+        opacity:0;
+    }
+
+    100% {
+        left: 29.571vw;
+        opacity:1;
+    }
+}
+
+@keyframes fade-right-out {
+    0% {
+        left: 29.571vw;
+        opacity:1;
+    }
+
+    100% {
+        left: 20.571vw;
+        opacity:0;
     }
 }

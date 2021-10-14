@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,21 +22,657 @@
     <link rel="stylesheet" href="public/css/common.css" />
     <!-- page css-->
     <link rel="stylesheet" href="public/css/page/index.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <section class="hero"></section>
-    <!-- KAMOY FILL UNSA E NGALAN NINYO DIRI PERO NICE IF NGAN JD SA CONTENT IBUTANG EX. <CONCEPT>-->
-    <section class="concept">
-        <div class="concept__top"></div>
-        <div class="concept__center"></div>
-        <div class="concept__bottom"></div>
-    </section>
-    <section class="p-footer"></section>
+    <!-- Header -->
+    <header class="width_100 relative">
+        <div class="nav_m_wrap">
+            <div class="nav_container mg_auto l-wrap">
+                <div class="nav_pc width_100 flex">
+                    <div class="width_15">
+                        <div class="nav width_100">
+                            <div class="nav_item">
+                                <a href="#concept" class="flex flex_center">
+                                    <img src="public/img/navigation/nav_concept.svg" alt="CONCEPT">
+                                </a>
+                            </div>
 
+                            <div class="nav_item"> 
+                                <a href="#menu" class="flex flex_center">
+                                    <img src="public/img/navigation/nav_menu.svg" alt="MENU">
+                                </a>                                
+                            </div>
+                            
+                            <div class="nav_item">
+                                <a href="#access" class="flex flex_center">
+                                    <img src="public/img/navigation/nav_access.svg" alt="ACCESS">
+                                </a>
+                            </div>
+
+                            <div class="nav_item">
+                                <a href="https://www.instagram.com/cowscrown_2021/"  target="_blank" class="nav_insta flex flex_center">
+                                    <img src="public/img/navigation/nav_insta.svg" alt="Instagram">
+                                    <img src="public/img/common/foot_insta.svg" alt="" class="icon">
+                                </a>
+                            </div>
+
+                            <div class="nav_item">
+                                <a href="https://www.facebook.com/COWSCROWN2021/" target="_blank" class="nav_fb flex flex_center">
+                                    <img src="public/img/navigation/nav_fb.svg" alt="Facebook">
+                                    <img src="public/img/common/foot_fb.svg" alt="" class="icon">
+                                </a>
+                            </div>
+
+                            <div class="nav_item">
+                                <a href="https://k-syu.com/" target="_blank" class="txt_white nav_logo">
+                                    <div class="width_73 mg_auto">
+                                        <img src="public/img/common/head_nav_logo.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- End nav_item -->
+                        </div>
+                    </div>
+                    <div class="view_pc width_85"></div>
+                </div>
+                <!-- end nav_pc -->
+
+                <div class="nav_tab width_100">
+                    <div class="nav width_100 mg_auto flex flex_center">
+                        <div class="nav_item flex flex_center">
+                            <a href="#concept" class="flex flex_center">
+                                <img src="public/img/navigation/nav_concept.svg" alt="CONCEPT">
+                            </a>
+                        </div>
+
+                        <div class="nav_item flex flex_center"> 
+                            <a href="#menu" class="flex flex_center">
+                                <img src="public/img/navigation/nav_menu.svg" alt="MENU">
+                            </a>
+                        </div>
+                        
+                        <div class="nav_item flex flex_center">
+                            <a href="#access" class="flex flex_center">
+                                <img src="public/img/navigation/nav_access.svg" alt="ACCESS">
+                            </a>
+                        </div>
+
+                        <div class="nav_item flex flex_center">
+                            <a href="https://www.instagram.com/cowscrown_2021/"  target="_blank" class="nav_insta flex flex_center">
+                                <img src="public/img/common/foot_insta.svg" alt="" class="icon">
+                            </a>
+                        </div>
+
+                        <div class="nav_item flex flex_center">
+                            <a href="https://www.facebook.com/COWSCROWN2021/" target="_blank" class="nav_fb flex flex_center">
+                                <img src="public/img/common/foot_fb.svg" alt="" class="icon">
+                            </a>
+                        </div>
+
+                        <div class="nav_item flex flex_center">
+                            <a href="https://k-syu.com/" target="_blank" class="txt_white nav_logo flex flex_center">
+                                <img src="public/img/common/nav_logo.svg" alt="">
+                            </a>
+                        </div>
+                        <!-- End nav_item -->
+                    </div>
+                    <div class="view_pc width_85"></div>
+                </div>
+                <!-- End nav_tab -->
+
+                <div class="view_sp width_100 relative">
+                    <div class="nav width_100 navbar">
+                        <div class="width_85 mg_auto flex flex_center nav_fix" id="nav">
+                            <div class="nav_item flex flex_center">
+                                <a href="#concept" class="flex flex_center">
+                                    <img src="public/img/navigation/nav_concept.svg" alt="CONCEPT">
+                                </a>
+                            </div>
+    
+                            <div class="nav_item flex flex_center"> 
+                                <a href="#menu" class="flex flex_center">
+                                    <img src="public/img/navigation/nav_menu.svg" alt="MENU">
+                                </a>
+                            </div>
+                            
+                            <div class="nav_item flex flex_center">
+                                <a href="#access" class="flex flex_center">
+                                    <img src="public/img/navigation/nav_access.svg" alt="ACCESS">
+                                </a>
+                            </div>
+    
+                            <div class="nav_item flex flex_center">
+                                <a href="https://www.instagram.com/cowscrown_2021/"  target="_blank" class="nav_insta flex flex_center">
+                                    <img src="public/img/common/foot_insta.svg" alt="" class="icon">
+                                </a>
+                            </div>
+    
+                            <div class="nav_item flex flex_center">
+                                <a href="https://www.facebook.com/COWSCROWN2021/" target="_blank" class="nav_fb flex flex_center">
+                                    <img src="public/img/common/foot_fb.svg" alt="" class="icon">
+                                </a>
+                            </div>
+    
+                            <div class="nav_item flex flex_center">
+                                <a href="https://k-syu.com/" target="_blank" class="txt_white nav_logo flex flex_center">
+                                    <img src="public/img/common/nav_logo.svg" alt="">
+                                </a>
+                            </div>
+                            <!-- End nav_item -->
+                        </div>
+                        <!-- End nav -->
+                    </div>
+                    <div class="view_pc width_85"></div>
+                </div>
+                <!-- End view_sp -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">                
+            <div class="l-wrap">
+                <div class=" hero__inner relative">
+                    <div class="hero__top u-d-f">
+                        <h1 class="hero__logo">
+                            <img src="public/img/common/hero_logo.png" alt="Cows Crown">
+                        </h1>
+                    </div>
+
+                    <a href="" class="txt_white line_height font_14 oswald_r scroll">
+                        scroll
+                    </a>
+                    <!-- <div class="hero__bottom relative width_100">
+                        <a href="" class="txt_white line_height font_16 oswald_r scroll">
+                            scroll
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CONCEPT SECTION -->
+        <section class="concept" id="concept">
+            <div class="con_stage">                
+                <div class="con_container l-wrap">
+                    <div class="con_content">      
+                        <h2>
+                            <img class="txt_center" src="public/img/concept/con_title.png" alt="Concept">   
+                        </h2>
+                        <div class="_line"></div>                        
+                        <h3 class="noto_b txt_center view_pc">創業昭和57年、近江牛焼肉の慶州がプロデュースする<br/>近江牛100%のグルメバーガーショップ</h3>
+                        <h3 class="noto_b txt_center view_tab">創業昭和57年、<br/>近江牛焼肉の慶州がプロデュースする<br/>近江牛100%のグルメバーガーショップ</h3>
+                        <h3 class="noto_b txt_center view_sp">創業昭和57年、<br/>近江牛焼肉の慶州がプロデュースする<br/>近江牛100%のグルメバーガーショップ</h3>
+                        <p class="noto_r txt_left">2021年、滋賀県草津市にオープンした、近江牛100%本格グルメバーガーショップ「COWSCROWN」。近江牛を知り尽くした、滋賀県で不動の人気を誇る焼肉店「慶州」のセカンドブランドです。</p>
+                        <p class="noto_r txt_left">つなぎを一切使わない近江牛100％のパティが当店の主役。地元のパン屋から特注した手作りバンズと、自家製ソースを組み合わせて、パティとの相性を徹底追求しました。溢れる上質な肉汁が口の中に広がる最高の贅沢を。肉好きのあなたのために、肉屋が本物のハンバーガーをご提供します。</p>
+                    </div>
+                </div>
+            </div>            
+            <div class="con_burger"></div>
+        </section>
+
+        <!-- QUALITY SECTION -->
+        <section class="quality" id="quality">
+            <div class="q_stage">
+                <div class="q_burger"></div>
+                <!-- View PC -->
+                <div class="view_pc q_container l-wrap">
+                    <div class="q_content flex flex_center mg_auto">
+                        <div class="width_37">
+                            <div class="buns_pc">
+                                <img src="public/img/quality/q_title_1.png" alt="Buns" class="txt_center q_title_1">
+                                <p class="noto_r txt_center txt_bun">甲賀市の「柏屋製パン」で、<br />
+                                    当店専用に特注したバンズは、<br />
+                                    小麦の香りがたまらない逸品。<br />
+                                    自慢のパティと最高の相性を<br />
+                                    追及しました。</p>
+                            </div>
+
+                            <div class="andmore_pc">
+                                <img src="public/img/quality/q_title_2.png" alt="And More" class="txt_center q_title_2">
+                                <p class="noto_r txt_center">その他、「栗東スモークベーコン」や、<br />
+                                    滋賀県のクラフトビールなど、<br />
+                                    こだわりの食材でおもてなしさせていただきます。</p>
+                            </div>
+                        </div>
+                        <div class="width_25"></div>
+                        <div class="width_37">
+                            <div class="omnibeef_pc">
+                                <img src="public/img/quality/q_badge.png" alt="Patty" class="txt_center q_badge">
+                            </div>
+                            <div class="patty_pc ">
+                                <img src="public/img/quality/q_title_3.png" alt="Patty" class="txt_center q_title_3">
+                                <p class="noto_r txt_center">日本三大和牛の一つである<br />
+                                    「近江牛」を100％使用し、つなぎを一切使わない<br />
+                                    本物のパティをご用意しました。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View TAB -->
+                <div class="view_tab q_container l-wrap">
+                    <div class="q_content flex flex_center width_100">
+                        <div class="width_37">
+                            <div class="buns_tab">
+                                <img src="public/img/quality/q_title_1.png" alt="Buns" class="txt_center q_title_1">
+                                <p class="noto_r txt_center txt_bun">甲賀市の「柏屋製パン」で、<br />
+                                    当店専用に特注したバンズは、<br />
+                                    小麦の香りがたまらない逸品。<br />
+                                    自慢のパティと最高の相性を<br />
+                                    追及しました。</p>    
+                            </div>
+                            <div class="andmore_tab">
+                                <img src="public/img/quality/q_title_2.png" alt="And More" class="txt_center q_title_2">
+                                <p class="noto_r txt_center">その他、「栗東スモークベーコン」や、<br />
+                                    滋賀県のクラフトビールなど、<br />
+                                    こだわりの食材でおもてなしさせていただきます。</p>
+                            </div>
+                        </div>
+                        <div class="width_25"></div>
+                        <div class="width_37">
+                            <div class="omnibeef_tab">
+                                <img src="public/img/quality/q_badge.png" alt="Patty" class="txt_center q_badge">
+                            </div>
+                            <div class="patty_tab">
+                                <img src="public/img/quality/q_title_3.png" alt="Patty" class="txt_center q_title_3">
+                                <p class="noto_r txt_center">日本三大和牛の一つである<br />
+                                    「近江牛」を100％使用し、つなぎを一切使わない<br />
+                                    本物のパティをご用意しました。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View SP -->
+                <div class="view_sp q_container">
+                    <div class="q_content flex flex_initial mg_auto">
+                        <div class="width_100 sp_q_row_1">
+                            <div class="width_57">
+                                <div class="patty_sp">
+                                    <img src="public/img/quality/q_title_3.png" alt="Patty" class="txt_left q_title_1">
+                                    <p class="noto_r txt_left">日本三大和牛の一つである「近江牛」を100％使用し、つ
+                                        なぎを一切使わない本物のパティをご用意しました。</p>
+                                </div>
+                            </div>
+
+                            <div class="width_43">
+                                <div class="omnibeef_sp">
+                                    <img src="public/img/quality/q_badge.png" alt="Patty" class="txt_left q_badge">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="width_100 sp_q_row_2">
+                            <div class="buns_sp">
+                                <img src="public/img/quality/q_title_1.png" alt="Buns" class="txt_left q_title_2">
+                                <p class="noto_r txt_left txt_bun">甲賀市の「柏屋製パン」で、当店専用に特注したバン
+                                    ズは、小麦の香りがたまらない逸品。<br />
+                                    自慢のパティと最高の相性を追及しました。</p>
+                            </div>
+                            <div class="andmore_sp">
+                                <img src="public/img/quality/q_title_2.png" alt="And More" class="txt_left q_title_3">
+                                <p class="noto_r txt_left">その他、「栗東スモークベーコン」や、滋賀県のクラフトビールなど、
+                                    こだわりの食材でおもてなしさせていただきます。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU SECTION -->
+        <section class="menu" id="menu">
+            <div class="m_stage">                
+                <div class="m_container l-wrap">
+                    <div class="m_content mg_auto relative">      
+                        <h2>
+                            <img class="txt_center" src="public/img/menu/m_title.png" alt="Menu">   
+                        </h2>                                           
+                        
+                        <p class="noto_r txt_white font_18 txt_center">食材にこだわったカウズクラウンのハンバーガー！
+                            メニューの一部をご紹介します。</p>
+                        
+                        <a href="public/pdf/cowscrown_menu.pdf" target="_blank" class="menu_btn">
+                            <div class="m_btn relative mg_auto flex flex_center">
+                                <div class="width_6"></div>
+                                <div class="width_8">
+                                    <img src="public/img/menu/m_icon.svg" alt="" class="icon">
+                                </div>
+                                <div class="width_1"></div>
+                                <div class="width_68">
+                                    <p class="noto_m font_20 line_height txt_center flex flex_center">メニューを見る</p>
+                                </div>
+                                <div class="width_13"></div>
+                            </div>                                
+                        </a>
+                        <div class="_line"></div>     
+
+                    </div>
+                </div>
+            </div>     
+        </section>
+        
+        <!-- TAKEOUT SECTION -->
+        <section class="takeout" id="takeout">
+            <div class="tk_stage">                
+                <div class="tk_container l-wrap">
+                    <div class="view_pc">
+                        <div class="tk_content flex flex_center mg_auto relative">      
+                            <div class="width_40"></div>
+                            <div class="width_60">
+                                <img class="txt_center" src="public/img/takeout/tk_title.png" alt="Concept">              
+                                <p class="noto_r txt_center font_18">全ての商品テイクアウトOK！<br/>
+                                    お気軽にお申し付けください。<br/>
+                                    （袋・容器代30円頂戴いたします。）</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="view_tab">
+                        <div class="tk_content flex flex_center mg_auto relative">      
+                            <div class="width_30"></div>
+                            <div class="width_70">
+                                <img class="txt_center" src="public/img/takeout/tk_title.png" alt="Concept">              
+                                <p class="noto_r txt_center font_18">全ての商品テイクアウトOK！<br/>
+                                    お気軽にお申し付けください。<br/>
+                                    （袋・容器代30円頂戴いたします。）</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="view_sp">
+                        <div class="tk_content flex flex_center mg_auto relative">    
+                            <div class="width_100">
+                                <img class="txt_center" src="public/img/takeout/tk_title.png" alt="Concept">              
+                                <p class="noto_r txt_center font_18">全ての商品テイクアウトOK！お気軽にお申し付けください。（袋・容器代30円頂戴いたします。）</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>            
+            <div class="tk_burger"></div>
+        </section>
+
+        <!-- ACCESS SECTION -->
+        <section class="access" id="access">
+            <div class="a_stage relative">
+                <div class="a_bg"></div>
+
+                <div class="a_container l-wrap">
+                    <div class="a_content_wrap mg_auto">      
+                        <h2>
+                            <img class="txt_center relative undrag img_title" src="public/img/access/access_title.png" alt="Access">
+                        </h2>   
+                        
+                        
+                        <div class="a_content mg_auto relative">
+                            <h4 class="noto_b font_26 txt_center line_height">COWSCROWN</h4>
+                            
+                            <div class="a_phone_num flex flex_center mg_auto">
+                                <!-- <div class="width_2"></div>
+                                <div class="width_10">
+                                    <img src="public/img/access/icon_phone.svg" alt="" class="icon">
+                                </div>
+                                <div class="width_5"></div>
+                                <div class="width">
+                                    <h3 class="noto_b font_36 line_height">077-518-8030</h3>    
+                                </div>
+                                <div class="width_2"></div> -->
+
+                                <h3 class="noto_b font_36 line_height flex flex_center">
+                                    <img src="public/img/access/icon_phone.svg" alt="" class="icon">077-518-8030</h3>   
+                            </div>
+                            
+                            <p class="noto_r font_18 txt_center">滋賀県草津市西大路町2-2 西田ビル1F
+                                草津駅から130m</p>
+                            
+                            
+                            <a href="https://goo.gl/maps/D78rqQvjo1fNHAAr6" class="view_pctab">
+                                <div class="a_map_btn relative mg_auto flex flex_center">
+                                    <div class="width_6"></div>
+                                    <div class="width_10">
+                                        <!-- <img src="public/img/access/icon_marker.svg" alt="" class="icon"> -->
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.71 30"><defs><style>.cls-1{fill:#c8161d;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="レイヤー_1" data-name="レイヤー 1"><path class="cls-1" d="M12.35,0A12.35,12.35,0,0,0,0,12.35C0,19.18,9.71,30,12.35,30S24.71,19.18,24.71,12.35A12.36,12.36,0,0,0,12.35,0Zm0,18A5.67,5.67,0,1,1,18,12.35,5.67,5.67,0,0,1,12.35,18Z"/></g></g></svg>
+                                    </div>
+                                    <div class="width_2"></div>
+                                    <div class="width_68">
+                                        <p class="noto_b font_20 line_height txt_center flex flex_center">Google マップで見る</p>
+                                    </div>
+                                    <div class="width_11"></div>
+                                </div>                                
+                            </a>
+
+                            <div class="_line"></div>  
+
+                            <div class="a_time_1 flex mg_auto">
+                                <div class="width_25">
+                                    <p class="noto_r font_18 txt_left">営業時間</p>
+                                </div>
+                                <div class="width_75">
+                                    <p class="noto_r font_18 txt_left txt_p_left">11:00～15:00(L.O14:30)<br/>
+                                        17:00～21:00(L.O20:30)</p>
+                                </div>
+                            </div>
+
+                            <div class="a_time_2 flex mg_auto">
+                                <div class="width_25">
+                                    <p class="noto_r font_18 txt_left">定休日</p>
+                                </div>
+                                <div class="width_75">
+                                    <p class="noto_r font_18 txt_left txt_p_left">水曜日</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End a_content -->
+                    </div>
+                    <!-- End a_content_wrap -->
+                </div>
+                
+                <div class="view_sp">
+                    <div class="width_100">                        
+                        <iframe width="100%" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=480&amp;hl=en&amp;q=%E8%BF%91%E6%B1%9F%E7%89%9B%E3%83%90%E3%83%BC%E3%82%AC%E3%83%BC%20COWS%20CROWN+(%E8%BF%91%E6%B1%9F%E7%89%9B%E3%83%90%E3%83%BC%E3%82%AC%E3%83%BC%20COWS%20CROWN)&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=near&amp;output=embed"></iframe>
+                        
+                        <!-- Google Maps API -->
+                        <!-- <div id="map"></div> -->
+                    </div>
+                </div>
+                <!-- End a_container -->
+            </div>    
+        </section>
+
+        <!-- SHOP SECTION -->
+        <section class="shop">
+            <div class="width_100">
+                <img src="public/img/shop/shop_bg.png" alt="" class="relative">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="view_pc">
+            <div class="width_100 relative">
+                <div class="foot_nav_list pd_0 list_type_none flex flex_center mg_auto ">
+                    <div class="ft_col flex flex_center">
+                        <a href="#concept" class="flex flex_center">
+                            <img src="public/img/navigation/nav_concept.svg" alt="CONCEPT">
+                        </a>
+                    </div>
+
+                    <div class="ft_col flex flex_center">
+                        <a href="#menu" class="flex flex_center">
+                            <img src="public/img/navigation/nav_menu.svg" alt="MENU">
+                        </a>
+                    </div>
+
+                    <div class="ft_col flex flex_center"> 
+                        <a href="#access" class="flex flex_center">
+                            <img src="public/img/navigation/nav_access.svg" alt="ACCESS">
+                        </a>
+                    </div>
+
+                    <div class="ft_col flex flex_center">
+                        <a href="https://www.instagram.com/cowscrown_2021/"  target="_blank" class="nav_insta flex flex_center">
+                            <img src="public/img/navigation/nav_insta.svg" alt="Instagram" class="txt_insta">
+                            <img src="public/img/common/foot_insta.svg" alt="" class="icon">
+                        </a>
+                    </div>
+
+                    <div class="ft_col flex flex_center">
+                        <a href="https://www.facebook.com/COWSCROWN2021/" target="_blank" class="nav_insta flex flex_center">
+                            <img src="public/img/navigation/nav_fb.svg" alt="Instagram" class="txt_insta">
+                            <img src="public/img/common/foot_fb.svg" alt="" class="icon">
+                        </a>
+                    </div>
+
+                    <div class="ft_col flex flex_center">
+                        <a href="https://k-syu.com/" target="_blank" class="flex flex_center">
+                            <img src="public/img/common/foot_logo.png" alt="" class="txt_logo">
+                        </a>
+                    </div>
+
+                    <!-- End li -->
+                </div>
+            </div>
+            <div class="width_100 txt_center">
+                <p class="noto_r txt_white font_18">© 2021 COWSCROWN  Produced by <a href="http://jeengross.jp/" target="_blank" class="txt_white ">jeengross</a></p>
+            </div>
+        </div>
+
+        <div class="view_tab">
+            <div class="width_100 relative">
+                <div class="foot_nav_list pd_0 list_type_none flex flex_center mg_auto ">
+                    <div class="ft_col flex flex_center">
+                        <a href="#concept" class="flex flex_center">
+                            <img src="public/img/navigation/nav_concept.svg" alt="CONCEPT">
+                        </a>
+                    </div>
+
+                    <div class="ft_col flex flex_center">
+                        <a href="#menu" class="flex flex_center">
+                            <img src="public/img/navigation/nav_menu.svg" alt="MENU">
+                        </a>
+                    </div>
+
+                    <div class="ft_col flex flex_center"> 
+                        <a href="#access" class="flex flex_center">
+                            <img src="public/img/navigation/nav_access.svg" alt="ACCESS">
+                        </a>
+                    </div>
+
+                    <div class="ft_col flex flex_center">
+                        <a href="https://www.instagram.com/cowscrown_2021/"  target="_blank" class="nav_insta flex flex_center">
+                            <img src="public/img/navigation/nav_insta.svg" alt="Instagram" class="txt_insta">
+                            <img src="public/img/common/foot_insta.svg" alt="" class="icon">
+                        </a>
+                    </div>
+
+                    <div class="ft_col flex flex_center">
+                        <a href="https://www.facebook.com/COWSCROWN2021/" target="_blank" class="nav_insta flex flex_center">
+                            <img src="public/img/navigation/nav_fb.svg" alt="Instagram" class="txt_insta">
+                            <img src="public/img/common/foot_fb.svg" alt="" class="icon">
+                        </a>
+                    </div>
+
+                    <div class="ft_col flex flex_center">
+                        <a href="https://k-syu.com/" target="_blank" class="flex flex_center">
+                            <img src="public/img/common/foot_logo.png" alt="" class="txt_logo">
+                        </a>
+                    </div>
+
+                    <!-- End li -->
+                </div>
+            </div>
+            <div class="width_100 txt_center">
+                <p class="noto_r txt_white font_18">© 2021 COWSCROWN  Produced by <a href="http://jeengross.jp/" target="_blank" class="txt_white ">jeengross</a></p>
+            </div>
+        </div>
+
+        <div class="view_sp">
+            <div class="width_100 relative">
+                <div class="foot_nav_list pd_0 list_type_none mg_auto flex flex_center">
+                    <div class="ft_item flex flex_center">
+                        <a href="#concept" class="flex flex_center">
+                            <img src="public/img/navigation/nav_concept.svg" alt="CONCEPT">
+                        </a>
+                    </div>
+
+                    <div class="ft_item flex flex_center">
+                        <a href="#menu" class="flex flex_center">
+                            <img src="public/img/navigation/nav_menu.svg" alt="MENU">
+                        </a>
+                    </div>
+
+                    <div class="ft_item flex flex_center"> 
+                        <a href="#access" class="flex flex_center">
+                            <img src="public/img/navigation/nav_access.svg" alt="ACCESS">
+                        </a>
+                    </div>
+
+                    <!-- End width_33 -->
+                </div>
+
+                <div class="foot_social_list pd_0 list_type_none mg_auto flex flex_center">
+
+                    <div class="ft_item_2 flex flex_center">
+                        <a href="https://www.instagram.com/cowscrown_2021/"  target="_blank" class="flex flex_center">
+                            <img src="public/img/common/foot_insta.svg" alt="" class="ft_social">                  
+                        </a>
+                    </div>
+
+                    <div class="ft_item_2 flex flex_center">
+                        <a href="https://www.facebook.com/COWSCROWN2021/" target="_blank" class="flex flex_center">
+                            <img src="public/img/common/foot_fb.svg" alt="" class="ft_social">
+                        </a>
+                    </div>
+
+                    <div class="ft_item_2 flex flex_center">
+                        <a href="https://k-syu.com/" target="_blank" class="flex flex_center">
+                            <img src="public/img/common/foot_logo.svg" alt="" class="ft_logo">
+                        </a>
+                    </div>
+
+                    <!-- End width_30 -->
+                </div>
+
+            </div>
+            <div class="width_100 txt_center ft_btm">
+                <p class="noto_r txt_white font_16">© 2021 COWSCROWN  Produced by <a href="http://jeengross.jp/" target="_blank" class="txt_white ">jeengross</a></p>
+            </div>
+        </div>
+    </footer>
 
     <!-- MAIN JS-->
     <script type="text/javascript" src="public/js/all.js"></script>
+
+    <!-- Goggle API Key -->
+    <!-- <script>
+        function initMap() {
+            const location = { lat: 35.0233238105398, lng: 135.9607292455309 };
+            
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 17,
+                center: location,
+                disableDefaultUI: true,
+            });
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8NfPUxZwmihCTIjHiY6BEl3lYtsJRr8A&callback=initMap&libraries=&v=weekly" async></script> -->
 
 </body>
 

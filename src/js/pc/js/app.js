@@ -1,43 +1,110 @@
-const human = document.querySelector('.human__01');
-const humanShadow = document.querySelector('.human__02');
-
-const space = document.querySelector('.space__01');
-const spaceShadow = document.querySelector('.space__02');
-
-const house01 = document.querySelector('.house__01');
-const house02 = document.querySelector('.house__02');
-
-window.addEventListener('mousemove', (evt) => {
-  const x = (window.innerWidth / 2 - evt.pageX) / 20;
-  const y = (window.innerHeight / 2 - evt.pageY) / 20;
-  const x1 = (window.innerWidth / 2 - evt.pageX) / 60;
-  const y1 = (window.innerHeight / 2 - evt.pageY) / 60;
-  const x2 = (window.innerWidth / 2 - evt.pageX) / 90;
-  const y2 = (window.innerHeight / 2 - evt.pageY) / 90;
-
-  human.style.transform = `translateY(${y}px) translateX(${x}px)`;
-  humanShadow.style.transform = `translateY(${y}px) translateX(${x}px)`;
-
-  space.style.transform = `translateY(${y}px) translateX(${x}px)`;
-  spaceShadow.style.transform = `translateY(${y}px) translateX(${x}px)`;
-
-  house01.style.transform = `translateY(${y2}px) translateX(${x2}px)`;
-  house02.style.transform = `translateY(${y2}px) translateX(${x2}px)`;
-  // .style.transform = `translateY(${y}px) translateX(${x}px)`;
-
-
+$(document).ready(function(){
+    $(window).on("scroll",function(){
+        var wn = $(window).scrollTop();
+        if(wn > 120){
+            $(".navbar").css("background","rgba(0,0,0,0.3)");
+        }
+        else{
+            $(".navbar").css("background","rgba(1,1,1,0)");
+        }
+    });
+  });
   
-  // console.log("THIS IS X :" + evt.pageX + " THIS IS Y:"+evt.pageY);
-  // console.log(`WINDOW WIDTH ${window.innerWidth/2} PAGEY ${evt.pageX}`)
+  document.addEventListener('DOMContentLoaded', () => {
+      // OFFSET TOP OF EACH SECTIONS 
+      const hero = document.querySelector('.hero').offsetTop;
+      const concept = document.querySelector('.concept').offsetTop;
+      const menu = document.querySelector('.menu').offsetTop;
+      const quality = document.querySelector('.quality').offsetTop;
+      const access = document.querySelector('.access').offsetTop;
+      const takeout = document.querySelector('.takeout').offsetTop;
+      // ADDING CLASS TO THIS QUERY
+      const con_burger = document.querySelector('.con_burger');
+      const tk_burger = document.querySelector('.tk_burger');
+      // QUALITY SECTION
+      //! PC 
+      const buns_pc = document.querySelector('.buns_pc');
+      const andmore_pc = document.querySelector('.andmore_pc');
+      const omnibeef_pc = document.querySelector('.omnibeef_pc');
+      const patty_pc = document.querySelector('.patty_pc');
+      //! TABLET
+      const buns_tab = document.querySelector('.buns_tab'); 
+      const andmore_tab = document.querySelector('.andmore_tab');
+      const omnibeef_tab = document.querySelector('.omnibeef_tab');
+      const patty_tab = document.querySelector('.patty_tab');
+      //! SP
+      const buns_sp = document.querySelector('.buns_sp'); 
+      const andmore_sp = document.querySelector('.andmore_sp');
+      const omnibeef_sp = document.querySelector('.omnibeef_sp');
+      const patty_sp = document.querySelector('.patty_sp');
 
-  // console.log(` ${-(window.innerWidth/2 - evt.pageX) }`)
-});
+      if (window.pageYOffset === document.body.offsetTop) {
+        con_burger.style.visibility = 'hidden';
+      }
 
-
-const hello = document.querySelector('.blog__search > h1');
-hello.animate(
-  [{transform:'translateX(0px)'},
-  {transform:'translateX(30px)'},
-  {transform:'translateX(0px)'}]
+      window.onscroll= () =>{
+          const pageY = window.pageYOffset;
+          con_burger.style.visibility = 'visible';
+          if(pageY >= (hero+1) && pageY <= (concept-1) ){
+              con_burger.classList.add('fade-left-in');
+              con_burger.classList.remove('fade-left-out');
+          }else{
+              con_burger.classList.add('fade-left-out');
+              con_burger.classList.remove('fade-left-in');
+          }
+          // PAGE AND MENU
+          if(pageY >= (menu - 20) && pageY <= (access + 500) ){
+              if(window.innerWidth >= 770){
+                  tk_burger.classList.add('fade-right-in');
+                  tk_burger.classList.remove('fade-right-out');
+              }else{
+                  tk_burger.classList.remove('fade-right-out');
+                  tk_burger.classList.remove('fade-right-in');
+              }
   
-,{duration: 1000, iterations: Infinity });
+  
+          }else{
+              if(window.innerWidth >= 770){
+                  tk_burger.classList.add('fade-right-out');
+                  tk_burger.classList.remove('fade-right-in');
+              }else{
+                  tk_burger.classList.remove('fade-right-out');
+                  tk_burger.classList.remove('fade-right-in');
+              }
+          }
+  
+          if(pageY >= (quality -150)){
+              //PC 
+              buns_pc.style.visibility = "visible";
+              andmore_pc.style.visibility = "visible";
+              patty_pc.style.visibility = "visible";
+              //TABLET
+              buns_tab.style.visibility = "visible";
+              andmore_tab.style.visibility = "visible";
+              patty_tab.style.visibility = "visible";
+              //SP
+              buns_sp.style.visibility = "visible";
+              andmore_sp.style.visibility = "visible";
+              patty_sp.style.visibility = "visible";
+
+
+              if(window.innerWidth >= 770){
+                  buns_pc.classList.add('zoome');
+                  andmore_pc.classList.add('zoome');
+                  omnibeef_pc.classList.add('shake');
+                  patty_pc.classList.add('zoome');
+  
+                  buns_tab.classList.add('zoome');
+                  andmore_tab.classList.add('zoome');
+                  omnibeef_tab.classList.add('shake');
+                  patty_tab.classList.add('zoome');
+              }
+              if(window.innerWidth <= 769){
+                  buns_sp.classList.add('zoome');
+                  andmore_sp.classList.add('zoome');
+                  omnibeef_sp.classList.add('shake');
+                  patty_sp.classList.add('zoome');
+              }
+          }
+      }
+  });
